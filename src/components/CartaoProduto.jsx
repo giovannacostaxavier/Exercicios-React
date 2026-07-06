@@ -3,7 +3,7 @@ const CartaoProduto = ({nome,preco,disponivel})=>{
 
     let res
 
-    if(disponovel === true){
+    if(disponivel === true){
         res = "Disponivel"
     }else{
         res = "Indisponovel"
