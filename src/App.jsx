@@ -1,4 +1,4 @@
-import CartaoProduto from "./components/CartaoProduto"
+import CartaoFilme from "./components/CartaoFilme"
 
 
 const App= ()=> {
@@ -7,11 +7,11 @@ const App= ()=> {
    <div>
     <h2>Dados do projeto</h2>
 
-    <CartaoProduto
+    <CartaoFilme 
+      titulo = "Crepúsculo"
+      nota = {8} 
+      assistido = {true}
     
-    nome= "Iphone"
-    preco= {1200}
-    disponivel= {true}
     
     />
    </div>
