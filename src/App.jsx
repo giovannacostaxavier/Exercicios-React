@@ -1,16 +1,21 @@
-import Dados from "./components/Dados"
+import CartaoProduto from "./components/CartaoProduto"
+
 
 const App= ()=> {
   
   return (
    <div>
     <h2>Dados do projeto</h2>
-    <Dados
-    nome="Giovanna"
-    idade="29"
 
+    <CartaoProduto
+    
+    nome= "Iphone"
+    preco= {1200}
+    disponivel= {true}
+    
     />
    </div>
+
   )
 }
 
