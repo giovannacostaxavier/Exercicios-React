@@ -1,26 +1,16 @@
-import Perfil from "./components/Perfil"
+import Produto from "./components/Produto"
 
 const App= ()=> {
- 
+    const produtos = [
+  {id:3, nome: "Camisa", preco: 49.9 },
+  {id:1, nome: "Calça", preco: 89.9 },
+  {id:2, nome: "Tênis", preco: 199.9 }
+  ]
   return (
    <div>
     <h2>Dados do projeto</h2>
-    <Perfil
-      nome="Giovanna"
-      idade={29}
-      profissao="Engenheira de Software"
-    />
-
-     <Perfil
-      nome="Koll"
-      idade={3}
-      profissao="O cachorro mais lindo do mundo"
-    />
-
-     <Perfil
-      nome="Finn"
-      idade={29}
-      profissao="Engenheira de Software"
+    <Produto 
+      produtos={produtos}
     />
    </div>
 
