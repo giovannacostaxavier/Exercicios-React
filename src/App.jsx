@@ -1,17 +1,16 @@
-import ListaFilmes from "./components/ListaFilmes"
+import ListaTarefas from "./components/ListaTarefas"
 
 const App= ()=> {
-  const filmes =[
-    { id: 1, titulo: "Crepúsculo", nota: 8, assistido: true },
-    { id: 2, titulo: "Matrix", nota: 9.5, assistido: true },
-    { id: 3, titulo: "Duna 2", nota: 9, assistido: false },
+  const tarefas =[
+    { id: 1, titulo: "Lavar louça", concluida: true },
+    { id: 2, titulo: "Estudar", concluida: true },
+    { id: 3, titulo: "Ir ao ginásio", concluida: false },
   ]
   return (
    <div>
     <h2>Dados do projeto</h2>
-
-    <ListaFilmes
-      filmes={filmes}
+    <ListaTarefas
+        listaTarefas={tarefas}
     />
    </div>
 

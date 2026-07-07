@@ -1,4 +1,4 @@
-
+import CartaoFilme from "./CartaoFilme"
 
 const ListaFilmes=({filmes})=>{
 
