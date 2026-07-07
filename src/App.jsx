@@ -1,16 +1,26 @@
-import ListaTarefas from "./components/ListaTarefas"
+import Perfil from "./components/Perfil"
 
 const App= ()=> {
-  const tarefas =[
-    { id: 1, titulo: "Lavar louça", concluida: true },
-    { id: 2, titulo: "Estudar", concluida: true },
-    { id: 3, titulo: "Ir ao ginásio", concluida: false },
-  ]
+ 
   return (
    <div>
     <h2>Dados do projeto</h2>
-    <ListaTarefas
-        listaTarefas={tarefas}
+    <Perfil
+      nome="Giovanna"
+      idade={29}
+      profissao="Engenheira de Software"
+    />
+
+     <Perfil
+      nome="Koll"
+      idade={3}
+      profissao="O cachorro mais lindo do mundo"
+    />
+
+     <Perfil
+      nome="Finn"
+      idade={29}
+      profissao="Engenheira de Software"
     />
    </div>
 
