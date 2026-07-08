@@ -1,12 +1,13 @@
 
-const ListaTarefas =({listaTarefas})=>{
-    let res;
-    let lista = listaTarefas.map((el)=>{
-        if(el.concluida === true){
-            res = "Concluida"
-        }else{
-             res = "Pendente"
-            }
+const ListaTarefas =({listaTarefas})=>(
+        <div>
+            { listaTarefas.map((el)=>{
+             let res;
+                if(el.concluida === true){
+                    res = "Concluida"
+                }else{
+                    res = "Pendente"
+                    }   
         return(
             <p key={el.id} >
               
@@ -14,12 +15,8 @@ const ListaTarefas =({listaTarefas})=>{
             </p>
         )
        
-    })
-    return(
-        
-        <div>
-            {lista}
+    })}
         </div>
     )
-}
+
 export default ListaTarefas

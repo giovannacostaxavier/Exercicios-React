@@ -1,17 +1,15 @@
 
-const Produto =({produtos})=>{
-    const lista = produtos.map((el)=>{
-        return(
-        <p key={el.id}>
-            {el.nome} - {el.preco}
-        </p>)
-        
-    })
-    return(
+const Produto =({produtos})=>(
         <div>
-            {lista}
+            {produtos.map((el)=>(
+                <p key={el.id}>
+                    {el.nome} - {el.preco}
+                </p>
+                )
+        
+            )}
         </div>
-    )
-}
+        )
+
 
 export default Produto

@@ -1,17 +1,13 @@
 import CartaoFilme from "./CartaoFilme"
 
-const ListaFilmes=({filmes})=>{
-
-    const cartaoFilme = filmes.map((el)=>{
-        return(
-            <CartaoFilme key={el.id} titulo={el.titulo} nota={el.nota} assistido={el.assistido} />
-        )
-    })
-    return(
+const ListaFilmes=({filmes})=>(
         <div>
-            {cartaoFilme}
+            {filmes.map((el)=>(
+            <CartaoFilme key={el.id} titulo={el.titulo} nota={el.nota} assistido={el.assistido} />
+            )
+                )}
         </div>
     )
-}
+
 
     export default ListaFilmes

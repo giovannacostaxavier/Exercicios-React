@@ -1,6 +1,5 @@
 
-const Perfil =({nome,idade,profissao})=>{
-    return(
+const Perfil =({nome,idade,profissao})=>(
         <div>
             <p>
                 Nome: {nome} <br/>
@@ -9,6 +8,6 @@ const Perfil =({nome,idade,profissao})=>{
             </p>
         </div>
     )                                                                                                                                                                                                        
-}
+
 
 export default Perfil

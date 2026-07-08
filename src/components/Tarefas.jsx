@@ -1,19 +1,14 @@
 
-const Tarefas=({tarefas})=>{
-    
-    let lista=tarefas.map((el)=>{
-        
-        return(
-            <p key={el.id}>
-                {el.titulo} {el.concluida === true ? "✅" : "❌"}
-            </p>
-        )
-    })
-
-    return(
+const Tarefas=({tarefas})=>(
         <div>
-            {lista}
+            {tarefas.map((el)=>(
+                <p key={el.id}>
+                    {el.titulo} {el.concluida ? "✅" : "❌"}
+                </p>
+            )
+            )       
+            }
         </div>
     )
-}
+
 export default Tarefas
