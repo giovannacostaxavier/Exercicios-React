@@ -1,9 +1,9 @@
-import DadosPessoa from "./components/DadosPessoa"
+import ListaFrutas from "./components/ListaFrutas"
 
 const App= ()=> (
 
    <div>
-    <DadosPessoa/>
+    <ListaFrutas/>
    </div>
 
   )
