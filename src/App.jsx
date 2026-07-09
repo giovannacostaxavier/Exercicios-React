@@ -1,9 +1,9 @@
-import Frase from "./components/Frase"
+import DadosPessoa from "./components/DadosPessoa"
 
 const App= ()=> (
 
    <div>
-    <Frase/>
+    <DadosPessoa/>
    </div>
 
   )
