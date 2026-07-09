@@ -1,9 +1,9 @@
-import Contador from './components/Contador'
+import Frase from "./components/Frase"
 
 const App= ()=> (
 
    <div>
-    <Contador/>
+    <Frase/>
    </div>
 
   )
