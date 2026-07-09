@@ -1,9 +1,9 @@
-import ListaFrutas from "./components/ListaFrutas"
+import Login from "./components/Login"
 
 const App= ()=> (
 
    <div>
-    <ListaFrutas/>
+    <Login/>
    </div>
 
   )
