@@ -1,9 +1,9 @@
-import Login from "./components/Login"
+import Notificacao from "./components/Notificacao"
 
 const App= ()=> (
 
    <div>
-    <Login/>
+    <Notificacao/>
    </div>
 
   )
