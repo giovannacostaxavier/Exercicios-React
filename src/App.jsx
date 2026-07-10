@@ -1,9 +1,10 @@
-import Notificacao from "./components/Notificacao"
+
+import Contador from "./components/Contador"
 
 const App= ()=> (
 
    <div>
-    <Notificacao/>
+      <Contador />
    </div>
 
   )

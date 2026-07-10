@@ -1,10 +1,14 @@
-import { useState } from "react"
+import { useEffect,useState } from "react"
 
 const Contador= ()=> {
  
   const [valor,setValor] = useState(0)
-  return (
 
+    useEffect(()=>{
+      console.log("componente carregou!");
+    },[])
+
+  return (
    <div>
     <p>{valor}</p>
     <button onClick={()=> setValor(prevValor => prevValor+1)}>+1</button>
