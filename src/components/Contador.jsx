@@ -5,7 +5,7 @@ const Contador= ()=> {
   const [valor,setValor] = useState(0)
 
     useEffect(()=>{
-      console.log("componente carregou!");
+      console.log("componente carregou agora !");
     },[])
 
   return (
