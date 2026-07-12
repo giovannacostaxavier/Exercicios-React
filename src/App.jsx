@@ -1,9 +1,9 @@
-import Pokemon from "./components/Pokemon"
+import RickMorty from "./components/RickMorty"
 
 const App= ()=> (
 
    <div>
-      <Pokemon />
+      <RickMorty />
    </div>
 
   )
