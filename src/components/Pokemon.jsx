@@ -21,4 +21,12 @@ const Pokemon =()=>{
 
         buscarPokemon()
     },[])
+
+    return(
+        <div>
+
+        </div>
+    )
 }
+
+export default Pokemon

@@ -1,10 +1,9 @@
-
-import Contador from "./components/Contador"
+import Pokemon from "./components/Pokemon"
 
 const App= ()=> (
 
    <div>
-      <Contador />
+      <Pokemon />
    </div>
 
   )
