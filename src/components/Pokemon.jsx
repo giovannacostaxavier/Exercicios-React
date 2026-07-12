@@ -11,6 +11,7 @@ const Pokemon =()=>{
                         throw new Error(`A resposta falhou`);
                      }
                      const dados = await resposta.json()
+                     
                      setPokemons(dados.results)
                 } catch (error) {
                     console.log(`Erro ${error.message}`);
@@ -21,10 +22,16 @@ const Pokemon =()=>{
 
         buscarPokemon()
     },[])
-
+         
     return(
         <div>
-
+            {pokemons.map((el,id)=>{
+                return(
+                <p key={el.id}>
+                    {el.name}
+                </p>
+                )
+            })}
         </div>
     )
 }
