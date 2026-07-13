@@ -1,11 +1,18 @@
+import { useState, createContext } from "react"
+import Cabecalho from "./components/Cabecalho"
 
-import ComponenteA from "./components/ComponenteA"
+export const ThemeContext = createContext()
 
 const App= ()=> {
 
+   const [modo,setModo]=useState("claro")
    return(
       <div>
-         < ComponenteA />
+
+         < ThemeContext.Provider value={{modo,setModo}}>
+            <Cabecalho  />
+         </ThemeContext.Provider>
+         
          
       </div>
    )
