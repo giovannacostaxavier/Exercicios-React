@@ -9,11 +9,11 @@ const ThemeProvider =({children})=>{
         setMood(mood == "Modo Claro" ? "Modo Escuro" : "Modo Claro")
     }
     return(
-        <div>
+        
             <novoContexto.Provider value={{toggleTheme,mood}}>
-                <p>{children}</p>
+                {children}
             </novoContexto.Provider>
-        </div>
+        
     )
 }
 

@@ -1,20 +1,15 @@
-import { useState, createContext } from "react"
-import Cabecalho from "./components/Cabecalho"
+import ThemeProvider from "./components/ThemeProvider"
+import Header from "./components/Header"
+import ThemeButton from "./components/ThemeButton"
 
-export const ThemeContext = createContext()
 
 const App= ()=> {
 
-   const [modo,setModo]=useState("claro")
    return(
-      <div>
-
-         < ThemeContext.Provider value={{modo,setModo}}>
-            <Cabecalho  />
-         </ThemeContext.Provider>
-         
-         
-      </div>
+      <ThemeProvider>
+         <Header />
+         <ThemeButton />
+      </ThemeProvider>
    )
   
    }
