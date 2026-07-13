@@ -1,13 +1,17 @@
-import RickMorty from "./components/RickMorty"
 
-const App= ()=> (
+import ComponenteA from "./components/ComponenteA"
 
-   <div>
-      <RickMorty />
-   </div>
+const App= ()=> {
 
-  )
-
+   return(
+      <div>
+         < ComponenteA />
+         
+      </div>
+   )
+  
+   }
+  
 
 export default App
 
