@@ -1,10 +1,10 @@
-import InputRef from "./components/InputRef"
+import ComparadorDeRenders from "./components/ComparadorDeRenders"
 
 const App= ()=> {
 
    return(
      <div>
-         <InputRef />
+         <ComparadorDeRenders />
      </div>
    )
   
