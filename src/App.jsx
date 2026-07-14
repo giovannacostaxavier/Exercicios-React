@@ -1,10 +1,10 @@
-import ComparadorDeRenders from "./components/ComparadorDeRenders"
+import PlayPause from "./components/PlayPause"
 
 const App= ()=> {
 
    return(
      <div>
-         <ComparadorDeRenders />
+         <PlayPause />
      </div>
    )
   
