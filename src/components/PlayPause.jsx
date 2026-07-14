@@ -9,14 +9,9 @@ const PlayPause=()=>{
             setCont(prevValue => prevValue +1)
         },2000 )
     }
-
     const pause =()=>{
         clearInterval(refId.current)
     }
-
-
-
-
     return(
         <div>
             <p>{cont}</p>
