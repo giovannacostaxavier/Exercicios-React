@@ -1,10 +1,12 @@
-import PlayPause from "./components/PlayPause"
+import Temperatura from "./components/Temperatura"
 
 const App= ()=> {
 
    return(
      <div>
-         <PlayPause />
+         <Temperatura>
+          {(temperaturaDesejada)=> <p>{`${temperaturaDesejada}°C`}</p>}
+         </Temperatura>
      </div>
    )
   
