@@ -1,14 +1,13 @@
+import ComAviso from "./components/ComAviso"
 import Mensagem from "./components/Mensagem"
-import ComBorda from "./components/ComBorda"
-
-const MensagemComBorda = ComBorda(Mensagem);
-
 const App= ()=> {
       
-
+      const NovoComAviso = ComAviso(Mensagem)
    return(
      <div>
-       <MensagemComBorda/>
+        <NovoComAviso bloqueado={false}/>
+
+      
      </div>
    )
   
