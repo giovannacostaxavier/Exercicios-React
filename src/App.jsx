@@ -1,13 +1,14 @@
-import Interrupitor from "./components/Interrupitor"
+import Mensagem from "./components/Mensagem"
+import ComBorda from "./components/ComBorda"
+
+const MensagemComBorda = ComBorda(Mensagem);
 
 const App= ()=> {
+      
 
    return(
      <div>
-        <Interrupitor>
-            {(valorInterrupitor)=><p style={{ backgroundColor: valorInterrupitor ? "white" : "black" }}>
-              {valorInterrupitor ? "Ligado" : "Desligado"}</p>}
-        </Interrupitor>
+       <MensagemComBorda/>
      </div>
    )
   
