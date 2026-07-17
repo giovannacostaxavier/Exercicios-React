@@ -1,12 +1,13 @@
-import Temperatura from "./components/Temperatura"
+import Interrupitor from "./components/Interrupitor"
 
 const App= ()=> {
 
    return(
      <div>
-         <Temperatura>
-          {(temperaturaDesejada)=> <p>{`${temperaturaDesejada}°C`}</p>}
-         </Temperatura>
+        <Interrupitor>
+            {(valorInterrupitor)=><p style={{ backgroundColor: valorInterrupitor ? "white" : "black" }}>
+              {valorInterrupitor ? "Ligado" : "Desligado"}</p>}
+        </Interrupitor>
      </div>
    )
   
