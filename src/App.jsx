@@ -1,14 +1,14 @@
-import ProviderCor from "./components/ProviderCor"
-import MostrarCor from "./components/MostrarCor"
+import ProvedorNome from "./components/ProvedorNome"
+import MostrarNome from "./components/MostrarNome"
 
 const App= ()=> {
       
       
    return(
      <div>
-        <ProviderCor>
-          <MostrarCor/>
-        </ProviderCor>
+        <ProvedorNome>
+          <MostrarNome/>
+        </ProvedorNome>
      </div>
    )
   
