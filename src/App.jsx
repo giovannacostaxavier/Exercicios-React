@@ -1,11 +1,14 @@
-import ComContador from "./components/ComContador"
-import Mensagem from "./components/Mensagem"
+import ProviderCor from "./components/ProviderCor"
+import MostrarCor from "./components/MostrarCor"
+
 const App= ()=> {
       
-      const NovoComAviso = ComContador(Mensagem)
+      
    return(
      <div>
-        <NovoComAviso/>
+        <ProviderCor>
+          <MostrarCor/>
+        </ProviderCor>
      </div>
    )
   
