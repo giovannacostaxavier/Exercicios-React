@@ -1,5 +1,6 @@
 import ProvedorNome from "./components/ProvedorNome"
-import MostrarNome from "./components/MostrarNome"
+import PaginaNome from "./components/PaginaNome"
+import TrocarNome from "./components/TrocarNome"
 
 const App= ()=> {
       
@@ -7,7 +8,8 @@ const App= ()=> {
    return(
      <div>
         <ProvedorNome>
-          <MostrarNome/>
+            <PaginaNome/>
+            <TrocarNome/>
         </ProvedorNome>
      </div>
    )

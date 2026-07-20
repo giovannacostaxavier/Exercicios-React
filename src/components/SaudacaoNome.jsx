@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { ContextoNome } from "./ContextoNome";
 
-const MostrarNome =()=>{
+const SaudacaoNome=()=>{
     const {nome} = useContext(ContextoNome)
 
     return(
-        <p>Meu nome é {nome}</p>
+        <p>Olá {nome}</p>
     )
 }
 
-export default MostrarNome
+export default SaudacaoNome
