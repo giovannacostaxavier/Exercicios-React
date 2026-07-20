@@ -1,16 +1,16 @@
-import ProvedorNome from "./components/ProvedorNome"
-import PaginaNome from "./components/PaginaNome"
-import TrocarNome from "./components/TrocarNome"
+import Botaocont from "./components/BotaoCont"
+import MostrarContador from "./components/MostrarContador"
+import ProvedorContador from "./components/ProvedorContador"
 
 const App= ()=> {
       
       
    return(
      <div>
-        <ProvedorNome>
-            <PaginaNome/>
-            <TrocarNome/>
-        </ProvedorNome>
+        <ProvedorContador>
+            <MostrarContador/>
+            <Botaocont/>
+        </ProvedorContador>
      </div>
    )
   
