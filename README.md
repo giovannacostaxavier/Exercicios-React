@@ -1,16 +1,48 @@
-# React + Vite
+# React Exercícios
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Repositório de estudos e prática de React, criado durante o processo de aprendizagem do framework, com foco em preparação para uma vaga de estágio em front-end.
 
-Currently, two official plugins are available:
+## Sobre
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Aqui ficam os exercícios feitos ao longo do roadmap de React: hooks, listas e keys, renderização, componentes de ordem superior (HOC), render props, entre outros temas trabalhados durante os estudos.
 
-## React Compiler
+## Estrutura
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Os componentes de cada exercício ficam dentro de `src/components/`, e são renderizados trocando o import correspondente no `App.jsx`.
 
-## Expanding the Oxlint configuration
+```
+src/
+  components/
+    Componente1.jsx
+    Componente2.jsx
+    ...
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+> Observação: essa estrutura (todos os componentes numa pasta só) tornou a busca por exercícios mais difícil conforme o repositório cresceu. Os próximos exercícios seguem organizados por pasta em um novo repositório (`react-labs`), com uma pasta dedicada para cada exercício.
+
+## Tópicos praticados
+
+- `useState` (incluindo forma funcional de atualização)
+- `useEffect` (dependências, cleanup, padrão assíncrono)
+- `useRef`
+- `useContext` (Context API completa: criação, Provider, consumo)
+- Lists e Keys
+- Render Props
+- Higher Order Components (HOC)
+
+## Convenções de código
+
+- Arrow functions com destructuring de props no parâmetro
+- `export default` ao final do arquivo
+- Retorno implícito quando o corpo da função é uma única expressão JSX
+- `async/await` para código assíncrono
+- Commits seguindo [Conventional Commits](https://www.conventionalcommits.org/)
+
+## Tecnologias
+
+- React
+- Vite
+
+---
+
+Projeto pessoal de estudos, sem fins comerciais.
